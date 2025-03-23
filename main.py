@@ -1,5 +1,6 @@
 import logging
 import asyncio
+from config import API_TOKEN
 from aiogram import Bot, Dispatcher, types
 from aiogram.enums import ParseMode
 from aiogram.filters import Command
@@ -7,9 +8,6 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 from aiogram.utils.markdown import text
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
 from aiogram.client.default import DefaultBotProperties
-
-# Установи токен своего бота
-API_TOKEN = '7398146191:AAHlGYauBW0zzIdURiEb0UryBOeXU7gXBkE'
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
